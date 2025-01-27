@@ -1,0 +1,17 @@
+name: Clase_1
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Action_clase1
+      uses: actions/checkout@v3
+
+    - name: Verificar configuración
+      run: echo "GitHub Actions está configurado correctamente y funcionando"
